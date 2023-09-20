@@ -1,0 +1,31 @@
+<div>
+    <section id="home">
+        <app-hero></app-hero>
+    </section>
+    <section id="about">
+        <app-about></app-about>
+    </section>
+    <section id="founder">
+        <app-founder></app-founder>
+    </section>
+    <section id="technology">
+        <app-technology></app-technology>
+    </section>
+    <section id="cryocoolers">
+        <app-cryocoolers></app-cryocoolers>
+    </section>
+    <section id="blog-news">
+        <app-blog-news></app-blog-news>
+    </section>
+    <section id="join-us">
+        <app-join-us></app-join-us>
+    </section>
+    <section id="contact">
+        <app-contact></app-contact>
+    </section>
+    <div class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+        <button (click)="scrollToTop()">
+            <i class="fa fa-chevron-up"></i>
+        </button>
+    </div>
+</div>
