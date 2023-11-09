@@ -1,5 +1,6 @@
 .carousel-inner img{
     height: 100vh;
+    zoom: 80%;
 }
 .carousel-caption{
     top: 60%;

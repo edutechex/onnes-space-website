@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 
@@ -8,6 +8,20 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit{
+
+  // navBg: any;
+
+  // @HostListener('document:scroll') scrollover(){
+
+  //   if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0){
+  //     this.navBg = {
+  //       'background-color':'white',
+  //       'color':'red',
+  //     }
+  //   }else{
+  //     this.navBg = {}
+  //   } 
+  // }
 
   constructor(private activateRoute : ActivatedRoute){
 
