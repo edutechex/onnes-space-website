@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class FormService {
 
- baseUrl = "https://api.onnes.in/api";
+ baseUrl = "https://api.onnesspace.com/api";
 
   constructor(private http: HttpClient) { }
 
@@ -53,5 +53,25 @@ export class FormService {
   //get cfrp content
   getCfrpData(): Observable<any>{
     return this.http.get<any>(`${this.baseUrl}/Offoring_CFRP`);
+  }
+
+  //get partner
+  getPartner(): Observable<any>{
+    return this.http.get<any>(`${this.baseUrl}/Partner`)
+  }
+
+  //ger Advisor
+  getAdvisor(): Observable<any>{
+    return this.http.get<any>(`${this.baseUrl}/Advisory`);
+  }
+
+  //get user IP adress
+  getIpAddress(){
+    return this.http.get('https://ipapi.co/json');
+  }
+
+  //send visitor data
+  sendVisitorData(data: any){
+    return this.http.post(`${this.baseUrl}/Visitors`,data);
   }
 }

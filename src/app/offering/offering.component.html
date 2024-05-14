@@ -9,13 +9,15 @@
 
 <div class="blog-news">
     <div class="container mx-auto py-5 ">
-        <h1 class="fw-bold">CFRP Vessels</h1>
+       <div *ngFor="let content of selectAllContent">
+        <h1 class="fw-bold text-uppercase">{{content.name}}</h1>
         <hr>
-        <div *ngFor="let content of allCfrpContent">
+        <div >
             <p>{{content.content}}</p>
         </div>
+       </div>
         <div class="row mx-lg-5 py-lg-5 ps-lg-5 ps-3">
-            <div class="col-lg-4 col-sm-6" *ngFor="let data of allCfrpList">
+            <div class="col-lg-4 col-sm-6" *ngFor="let data of selectContentList">
                 <div class="card border-0" style="width: 20rem;">
                     <img [src]="data.image" class="card-img-top" alt="..." style="height: 13.5rem;">
                     <div class="card-body">

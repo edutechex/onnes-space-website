@@ -18,6 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { OfferingComponent } from './offering/offering.component';
 import { CfrpVesselsComponent } from './offering/cfrp-vessels/cfrp-vessels.component';
+import { PartnerComponent } from './partner/partner.component';
+import { AdvisoryComponent } from './advisory/advisory.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { CfrpVesselsComponent } from './offering/cfrp-vessels/cfrp-vessels.compo
     JoinUsComponent,
     ContactComponent,
     OfferingComponent,
-    CfrpVesselsComponent
+    CfrpVesselsComponent,
+    PartnerComponent,
+    AdvisoryComponent
   ],
   imports: [
     BrowserModule,
