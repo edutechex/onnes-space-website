@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +20,7 @@ import { OfferingComponent } from './offering/offering.component';
 import { CfrpVesselsComponent } from './offering/cfrp-vessels/cfrp-vessels.component';
 import { PartnerComponent } from './partner/partner.component';
 import { AdvisoryComponent } from './advisory/advisory.component';
+import { InvestorsComponent } from './investors/investors.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AdvisoryComponent } from './advisory/advisory.component';
     OfferingComponent,
     CfrpVesselsComponent,
     PartnerComponent,
-    AdvisoryComponent
+    AdvisoryComponent,
+    InvestorsComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +48,10 @@ import { AdvisoryComponent } from './advisory/advisory.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
+  ],
+  schemas:[
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]

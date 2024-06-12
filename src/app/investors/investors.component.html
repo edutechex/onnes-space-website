@@ -1,19 +1,19 @@
-<div class="partners" *ngIf="partnerData.length > 0">
+<div class="investors" *ngIf="investorData.length > 0">
     <div class="container mx-auto py-5 ">
-        <h1 class="fw-bold">Partners</h1>
+        <h1 class="fw-bold">Investors</h1>
         <hr>
         <div class="container">
             <div class="d-none d-lg-block">
                 <div class="row align-items-center">
-                    <!-- <div class="col-sm-4 py-3 mx-4" *ngFor="let item of partnerData">
+                    <!-- <div class="col-lg-4 py-3" *ngFor="let item of investorData">
                         <a [href]="item.link" target="_blank">
-                            <img [src]="item.image" alt="">
-                            <h6 class="fw-bold mt-3 text-center">{{item.title}}</h6>
+                            <img [src]="item.image" alt="" class="d-block fixed-size">
+                            <h5 class="fw-bold  mt-3 ms-5">{{item.title}}</h5>
                         </a>
                     </div> -->
                     <swiper-container class=" swiper-container d-none d-lg-block" loop="true" slides-per-view="3"
                         space-between="15" autoplay-delay="2500">
-                        <swiper-slide *ngFor="let item of partnerData">
+                        <swiper-slide *ngFor="let item of investorData">
                             <a [href]="item.link" target="_blank">
                                 <img [src]="item.image" alt="" class="d-block fixed-size">
                                 <h5 class="fw-bold  mt-3 ms-5">{{item.title}}</h5>
@@ -24,7 +24,7 @@
             </div>
             <div class="d-lg-none">
                 <div class="row align-items-center">
-                    <!-- <div class="col-12 my-3" *ngFor="let item of partnerData">
+                    <!-- <div class="col-12 my-3" *ngFor="let item of investorData">
                         <a [href]="item.link" target="_blank">
                             <img [src]="item.image" alt="" width="100%">
                             <h2 class="col-12 h2 w-100 mt-3 fw-bold text-center">{{item.title}}</h2>
@@ -32,28 +32,15 @@
                     </div> -->
                     <swiper-container class=" swiper-container" loop="true" navigation="true" pagination="true"
                         pagination-clickable="true" slides-per-view="1" space-between="15" autoplay-delay="2500">
-                        <swiper-slide *ngFor="let item of partnerData">
+                        <swiper-slide *ngFor="let item of investorData">
                             <a [href]="item.link" target="_blank">
                                 <img [src]="item.image" alt="" class="d-block fixed-size">
                                 <h5 class="fw-bold  mt-3 ms-5">{{item.title}}</h5>
                             </a>
                         </swiper-slide>
                     </swiper-container>
-
                 </div>
             </div>
         </div>
-        <!-- <div class="row mx-lg-5 py-lg-5 ps-lg-5 ps-3">
-            <div class="col-lg-4 col-sm-6" *ngFor="let blog of allBlogNewsData">
-                <a class="text-decoration-none" [href]="blog.link" target="_blank">
-                    <div class="card border-0" style="width: 20rem;">
-                        <img [src]="blog.image" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center fw-bold">{{blog.content}}</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div> -->
     </div>
 </div>

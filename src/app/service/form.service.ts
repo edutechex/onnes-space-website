@@ -60,6 +60,11 @@ export class FormService {
     return this.http.get<any>(`${this.baseUrl}/Partner`)
   }
 
+  // get Investor
+  getInvestor(){
+    return this.http.get(`${this.baseUrl}/Investors`);
+  }
+
   //ger Advisor
   getAdvisor(): Observable<any>{
     return this.http.get<any>(`${this.baseUrl}/Advisory`);
